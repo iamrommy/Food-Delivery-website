@@ -1,23 +1,18 @@
-/* CSS Reset , i.e. resetting the properties like margin and padding to 0, giving a default font, etc*/
+
 
 *{
     margin: 0;
     padding: 0;
-    /* font-family: 'Acme', sans-serif; */
-    /* font-family: 'Chakra Petch', sans-serif; */
-    /* font-family: 'Bree Serif', serif; */
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-/* CSS Variable */ /*just for learning*/
 :root{
     --navbar-height: 59px;
 }
 
-/* Navigation Bar */
 #navbar{
     display: flex;
     align-items: center;
@@ -25,7 +20,6 @@ html{
     top: 0px;
 }
 
-/*Navigation Bar: Logo and Image */
 #logo{
     margin: 10px 20px;
 }
@@ -36,13 +30,12 @@ html{
     
 }
 
-/*Navigation Bar: List Styling */
 #navbar ul{
     display: flex;
     font-family: 'Acme', sans-serif;
 }
 
-#navbar::before{ /*to add backgroung basically*/
+#navbar::before{ 
     content: "";
     background-color: black;
     position: absolute;
@@ -59,7 +52,7 @@ html{
     font-size: 1.3rem;
 }
 
-#navbar ul li a{ /*we gave padding to a but not li bcoz that it looks like whole effect has the hover effect*/
+#navbar ul li a{ 
     color: white;
     display: block;
     padding: 3px 20px;
