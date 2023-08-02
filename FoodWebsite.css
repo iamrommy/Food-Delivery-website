@@ -1,0 +1,242 @@
+/* CSS Reset , i.e. resetting the properties like margin and padding to 0, giving a default font, etc*/
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Acme', sans-serif; */
+    /* font-family: 'Chakra Petch', sans-serif; */
+    /* font-family: 'Bree Serif', serif; */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variable */ /*just for learning*/
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/*Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 20px;
+}
+
+#logo img{
+    height: 90px;
+    margin-right: 0px;
+    
+}
+
+/*Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Acme', sans-serif;
+}
+
+#navbar::before{ /*to add backgroung basically*/
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{ /*we gave padding to a but not li bcoz that it looks like whole effect has the hover effect*/
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{ 
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    height: 529px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(Project\ Photos/spaghetti.jpg) no-repeat center center/cover;
+    height: 640px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;   
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services Section */
+#services{
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    background-color: #e1dada;
+    padding: 34px;
+    margin: 10px 30px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+/* Client Section */
+
+#client-section{
+    position: relative;
+    margin-top:2px;
+    margin-bottom: 3px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(Project\ Photos/Fruits.jpg)no-repeat center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+.clients img{
+    height: 100px;
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+    margin-top: 2px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(Project\ Photos/contact.jpg) no-repeat center center/cover;
+}
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+
+.contact-box input, .contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+.contact-box form{
+    width: 40%;
+}
+
+.contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#submitbutton{
+    display: block;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    margin: 10px auto;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Class */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}

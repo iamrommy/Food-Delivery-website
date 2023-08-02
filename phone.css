@@ -1,0 +1,110 @@
+/* This is a css file to fix the website(Through media  query) when it is viewed in a phone */
+
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 8px 8px;
+}
+
+/* Home section */
+#home{
+    height: 535px;
+    padding: 3px 10px;
+}
+
+#home::before{
+    height: 687px;
+}
+
+#home h1{
+    font-size: 35px;
+}
+
+#home p{
+    font-size: 17px;
+}
+
+/* services section */
+#services{
+    flex-direction: column;
+}
+
+#services .box{
+    margin: 10px 12px;
+}
+
+#services .box img {
+    height: 100px;
+    width: auto;
+    justify-content: center;
+}
+
+/* client section */
+.clients{
+    /* overflow: hidden; */ /*this statement will hide the overflowed content but we don't want that*/
+    flex-wrap: wrap;
+}
+
+.client-item{
+    padding: 25px;
+}
+
+.clients img{
+    height: 50px; /*as the height will be changed but we don't know exactly how much width should also be reduced so we set it to auto*/
+    width: auto;
+}
+
+/* Contact section */
+.contact-box{
+    padding: 0px;
+}
+
+.contact-box form{
+    width: 80%;
+}
+
+/* footer section */
+
+/* utility classes */
+.h-primary{
+    font-size: 40px;
+}
+
+.h-secondary{
+    font-size: 25px;
+}
+
+.btn{
+    font-size: 20px;
+    padding: 4px 8px;
+}
+
+/* Extra media quereies */
+@media(max-width:360px){
+    #navbar ul li a{
+        padding: 8px 5px;
+    }
+}
+@media(max-width:330px){
+    #logo img{
+        height: 70px;
+        width: auto;
+    }
+    #navbar ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hr{
+        margin-top: -17px;
+    }
+}
+@media(max-width:250px){
+    #services .box img {
+        height: 70px;
+        width: auto;
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Online Food Delivery Service in India | StreetFood.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Bree+Serif&family=Chakra+Petch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="FoodWebsite.css">
+    <!-- This is a direct way to include a css file through media query -->
+    <link rel="stylesheet" media="screen and (max-width: 1160px)" href="phone.css">
+</head>
+<body>
+
+    <nav id="navbar"> <!-- Navigation bar -->
+
+        <div id="logo"> <!-- Website Logo -->
+            <img src="Project Photos/Logo.png" alt="StreetFood.com">
+        </div>
+        
+        <ul>    <!-- NavBar contents -->   <!-- li.item{<a></a>}*5  this is the emmet for below lines-->
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Your Orders</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+
+    </nav>
+
+    <section id="home"> <!--main text at home page-->
+        <h1 class="h-primary">Welcome to Street Food</h1>
+        <p>Welcome to the official website of Street Food where you can order any of your favorite foods with just one click</p>
+        <p>Click on the Order Now button below to get your food delivered at your doorsteps</p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <hr class="hr">
+    <section id="services-container"> <!--Services below the main text-->
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="Project Photos/pizza.png" alt="Error loading image">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Choose from a wide range of delicacies. You can select some of our handpicked menus or get a special menu customized as per your preferences and budget. We offer state of the art institutional catering to numerous MNCs, schools, colleges, hospitals, weddings, parties, or any other functions, ceremonies or institutes.</p>
+            </div>
+            <div class="box">
+                <img src="Project Photos/french-fries.png" alt="Error loading image">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Now Order your favorite Tasty Food From Street Food's extensive multicuisine menu by the kilo. Same Taste, Same Quality at Discounted Rates. Birthday Party? Calling guests over? Celebrating your Anniversary? Special Occasion? Be at ease. Simply place the order and Relax. It will reach you on time, conveniently packed.</p>
+            </div>
+            <div class="box">
+                <img src="Project Photos/Food Delivery.png" alt="Error loading image">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Explore restaurants that deliver near you, or try yummy takeout fare. With a place for every taste, it's easy to find food you crave, and order online or through the Street Food's Website. Find great meals fast with lots of local menus. Enjoy eating the convenient way with places that deliver to your door.</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- client Section -->
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div class="clients">
+            <div class="client-item">
+                <img src="Project Photos/appleLogo.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="Project Photos/facebookLogo.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="Project Photos/Twitter logo.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="Project Photos/Insta Logo.png" alt="Our Client">
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div class="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail: </label>
+                    <input type="text" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone number">Ph no.: </label>
+                    <input type="number" name="phone number" id="phone number" placeholder="Enter your number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="10" rows="10"></textarea>
+                </div>
+                <div>
+                    <button id="submitbutton">submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer>
+        <div class="center">
+            Copyright &copy; www.StreetFood.com All rights reserved
+        </div>
+    </footer>
+</body>
+</html>
