@@ -45,7 +45,6 @@
 
 /* client section */
 .clients{
-    /* overflow: hidden; */ /*this statement will hide the overflowed content but we don't want that*/
     flex-wrap: wrap;
 }
 
@@ -54,7 +53,7 @@
 }
 
 .clients img{
-    height: 50px; /*as the height will be changed but we don't know exactly how much width should also be reduced so we set it to auto*/
+    height: 50px; 
     width: auto;
 }
 
